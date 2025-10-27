@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  background-color: aliceblue;
+}
+
+header {
+  margin-bottom: 30px;
+  background-color: aquamarine;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: auto;
+}
+
+ul.navigation {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+}
+ul.Content {
+  padding: 0;
+  margin: 10px;
+  align-items: table;
+  list-style-type: none;
+}
+
+nav li {
+  margin-left: 25px;
+}
+
+.profile-photo {
+  width: 250px;
+  height: 250px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+  display: block;
+}
+
+a {
+  font-weight: bold;
+  color: black;
+}
+
+a:hover {
+  color: burlywood;
+  text-decoration: underline;
+}
