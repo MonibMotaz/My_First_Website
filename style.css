@@ -57,10 +57,12 @@ nav li {
 
 a {
   font-weight: bold;
+  text-decoration: none;
   color: black;
 }
 
 a:hover {
   color: burlywood;
-  text-decoration: underline;
+  text-decoration: none;
+  cursor: pointer;
 }
