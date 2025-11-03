@@ -28,12 +28,11 @@ main {
   margin: auto;
   align-items: center;
   justify-content: center;
-  flex-direction:column;
-  border:2px solid aquamarine;
+  flex-direction: column;
+  border: 2px solid aquamarine;
   padding: 15px;
   background-color: white;
-  border-radius: 10px
-
+  border-radius: 10px;
 }
 
 nav {
@@ -76,9 +75,12 @@ a:hover {
   cursor: pointer;
 }
 .linkedin-icon {
-  display:block
   margin-top: 20px;
   width: 40px;
   height: 40px;
-
+}
+.linkedin-icon:hover {
+  cursor: pointer;
+  transition-delay: 0.2s;
+  transform: scale(1.2);
 }
