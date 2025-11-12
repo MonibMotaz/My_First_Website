@@ -27,8 +27,13 @@ button {
   text-decoration: none;
   color: #edf0f1;
 }
-.Logo {
-  cursor: pointer;
+.logo {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
 }
 
 header {
