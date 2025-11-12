@@ -1,18 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   font-size: 20px;
-  background-color: aliceblue;
+  background-color: #24252a;
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --button-bg: #efefef;
+}
+
+body.dark-mode {
+  --bg-color: #222222;
+  --text-color: #f0f0f0;
+  --button-bg: #555555;
+}
+p,
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #edf0f1;
+}
+.Logo {
+  cursor: pointer;
 }
 
 header {
-  margin-bottom: 30px;
-  background-color: aquamarine;
-  padding: 15px 40px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  padding: 30px 10px;
+  border: solid black 2px;
+}
+
+.navigation {
+  list-style: none;
+}
+
+.navigation li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.navigation li a {
+  transition: all 0.3s ease 0s;
+}
+.navigation li a::hover {
+  color: #0088a9;
+}
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 0.1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.Logo {
+  margin-right: auto;
 }
 
 main {
@@ -31,21 +81,16 @@ main {
   flex-direction: column;
   border: 2px solid aquamarine;
   padding: 15px;
-  background-color: white;
+  background-color: #24252a;
   border-radius: 10px;
 }
 
 nav {
   margin-top: auto;
-}
-
-ul.navigation {
-  padding: 0;
-  margin: 0;
   display: flex;
-  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
 }
-
 nav li {
   margin-left: 25px;
 }
@@ -55,20 +100,12 @@ nav li {
   height: 250px;
   border-width: 5px;
   border-style: solid;
-  border-color: black;
+  border-color: white;
   border-radius: 50%;
   object-fit: cover;
   margin: auto;
   display: block;
 }
-
-a {
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-  margin-top: 20px;
-}
-
 a:hover {
   color: burlywood;
   text-decoration: none;
@@ -83,4 +120,9 @@ a:hover {
   cursor: pointer;
   transition-delay: 0.2s;
   transform: scale(1.2);
+}
+h1,
+h2 {
+  color: #edf0f1;
+  font-weight: bold;
 }
