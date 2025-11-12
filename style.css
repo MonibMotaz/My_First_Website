@@ -131,3 +131,26 @@ h2 {
   color: #edf0f1;
   font-weight: bold;
 }
+/* This is the new code for mobile devices */
+@media (max-width: 768px) {
+  header {
+    /* Stacks the nav and the button vertically */
+    flex-direction: column;
+
+    /* Adds some space between the stacked items */
+    gap: 20px;
+    padding: 20px; /* Give a little more breathing room */
+  }
+
+  .navigation {
+    /* Removes default list padding to help with centering */
+    padding-left: 0;
+  }
+
+  .navigation li {
+    /* Stacks the navigation links (Home, About, Services) */
+    display: block;
+    text-align: center;
+    margin: 10px 0; /* Adds vertical space instead of horizontal */
+  }
+}
